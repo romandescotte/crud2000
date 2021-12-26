@@ -9,7 +9,7 @@ if (document.getElementById("app")) {
         },
         delimiters: ['[[', ']]'],
         created() {
-            var url = 'http://localhost:5000/index'
+            var url = 'https://db-prueba-no-borrar.herokuapp.com/index'
             //'http://localhost:5000/productos'
             this.fetchData(url)
             
