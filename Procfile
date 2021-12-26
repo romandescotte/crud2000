@@ -1,1 +1,1 @@
-web: gunicorn main:./src/app
+web: gunicorn run:app

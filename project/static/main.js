@@ -1,3 +1,4 @@
+
 if (document.getElementById("app")) {
     const app = new Vue({
         el: "#app",
@@ -6,9 +7,12 @@ if (document.getElementById("app")) {
             errored: false,
             loading: true
         },
+        delimiters: ['[[', ']]'],
         created() {
-            var url = 'http://localhost:5000/productos'
+            var url = 'http://localhost:5000/index'
+            //'http://localhost:5000/productos'
             this.fetchData(url)
+            
         },
         methods: {
             fetchData(url) {
@@ -22,17 +26,17 @@ if (document.getElementById("app")) {
                         this.errored = true
                     })
             },
-            eliminar(producto) {
-                const url = 'http://localhost:5000/producto/' + producto;
-                var options = {
-                    method: 'DELETE',
-                }
-                fetch(url, options)
-                    .then(res => res.text()) // or res.json()
-                    .then(res => {
-                        location.reload();
-                    })
-            }
+            // eliminar(producto) {
+            //     const url = 'http://localhost:5000/producto/' + producto;
+            //     var options = {
+            //         method: 'DELETE',
+            //     }
+            //     fetch(url, options)
+            //         .then(res => res.text()) // or res.json()
+            //         .then(res => {
+            //             location.reload();
+            //         })
+            // }
         }
     })
 }
