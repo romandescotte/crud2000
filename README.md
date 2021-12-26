@@ -4,7 +4,7 @@ Esto es un CRUD en desarrollo con VueJS y Flask realizado para el curso de Codo 
 
 ## Instalación
 
-1. Descargar e instalar Python 3.10.1 desde [Python] (https://www.python.org "Python Website")
+1. Descargar e instalar Python 3.10.1 desde [Python](https://www.python.org "Python Website")
 2. Si ya tienes instalado Python, puedes chequear la version ejecutando en CMD `python --version`.
 3. Instala el modulo Virtual Environment tipeando en CMD `pip install virtualenv`.
 4. Navega hasta la carpeta **crud2000**, corre CMD y ejecuta `virtualenv venv`. Esto creará la carpeta **venv** junto a **project**
