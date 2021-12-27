@@ -5,7 +5,7 @@ from project.models import Producto, ProductoSchema
 producto_schema=ProductoSchema()            # para crear un producto
 productos_schema=ProductoSchema(many=True)  # multiples registros
 
-@app.route('/index',methods=['GET'])
+@app.route('/',methods=['GET'])
 def get_Productos():   
     all_productos=Producto.query.all()
     result=productos_schema.dump(all_productos)

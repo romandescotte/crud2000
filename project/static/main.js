@@ -9,7 +9,7 @@ if (document.getElementById("app")) {
         },
         delimiters: ['[[', ']]'],
         created() {
-            var url = 'https://db-prueba-no-borrar.herokuapp.com/index'
+            var url = 'https://db-prueba-no-borrar.herokuapp.com/'
             this.fetchData(url)
         },
         methods: {
